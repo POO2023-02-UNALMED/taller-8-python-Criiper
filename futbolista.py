@@ -5,13 +5,20 @@ class Futbolista(Persona, Deportista):
     listaFutbolistas = []
 
     def __init__(self, nombre, edad, altura, sexo, añosPracticando, _golesMarcados, _tarjetasRojas, _piernaHabil):
-        super().__init__(nombre, edad, altura, sexo)
-        super(Deportista, self).__init__("Futbol", añosPracticando)
+        super().__init__()
+        super(Deportista, self).__init__()
+        self.setNombre(nombre)
+        self.setEdad(edad)
+        self.setAltura(altura)
+        self.setSexo(sexo)
+        self.setAñosPracticando(añosPracticando)
         self._golesMarcados = _golesMarcados
         self._tarjetasRojas = _tarjetasRojas
         self._piernaHabil = _piernaHabil
 
         Futbolista.listaFutbolistas.append(self)
+    
+    
 
     def getGolesMarcados(self):
         return self._golesMarcados
