@@ -18,7 +18,7 @@ class Persona():
         self._nombre = _nombre
 
     def getEdad(self):
-        return self._Edad
+        return self._edad
     
     def setEdad(self, _edad):
         self._edad = _edad
