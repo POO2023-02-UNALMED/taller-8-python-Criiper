@@ -38,6 +38,7 @@ class Futbolista(Persona, Deportista):
     def setPiernaHabil(self, _piernaHabil):
         self._piernaHabil = _piernaHabil
 
+
     
     def __str__(self):
         return (f"Mi nombre es {self.getNombre()} soy profesional en el deporte {super.getDeporte()} Tengo {self.getEdad()} años de edad y llevo {self.getAñosPracticando()} Participando años en el deporte")
