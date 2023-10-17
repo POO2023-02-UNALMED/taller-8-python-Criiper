@@ -8,7 +8,7 @@ class Persona():
     def __init__(self):
         self.nombre = "No Define"
         self.edad = 18
-        self.altura = 1.80
+        self.altura = "1.80"
         self.sexo = "No Define"   
     
     def getNombre(self):

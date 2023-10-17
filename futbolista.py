@@ -5,11 +5,12 @@ class Futbolista(Persona, Deportista):
     listaFutbolistas = []
 
     def __init__(self, nombre, edad, altura, sexo, deporte, añosPracticando, _golesMarcados, _tarjetasRojas, _piernaHabil):
-        super(Persona, self).__init__(nombre, edad, altura, sexo)
-        super(Deportista, self).__init__(deporte, añosPracticando)
+        super(Persona).__init__(nombre, edad, altura, sexo)
+        super(Deportista).__init__(deporte, añosPracticando)
         self._golesMarcados = _golesMarcados
         self._tarjetasRojas = _tarjetasRojas
         self._piernaHabil = _piernaHabil
+
         Futbolista.listaFutbolistas.append(self)
 
 
